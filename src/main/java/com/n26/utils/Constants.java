@@ -5,4 +5,5 @@ public class Constants {
     public static final int TRANSACTION_REQ_SIZE = 2;
     public static final String[] TRANSACTION_VALID_REQ_KEYS = new String[]{"amount", "timestamp"};
     public static final String TRANSACTION_CLEANER_DAEMON = "Transaction cleaner daemon";
+    public static final Long DAEMON_DELAY_TIME = 1000l; // 1 second
 }

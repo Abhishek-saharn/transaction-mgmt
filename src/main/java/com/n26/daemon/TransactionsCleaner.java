@@ -19,7 +19,7 @@ public class TransactionsCleaner extends Thread{
                 if (!TransactionServiceImpl.TRANSACTION_MAP.isEmpty()) {
                     TransactionServiceImpl.TRANSACTION_MAP.values().removeIf(value -> (System.currentTimeMillis() - value) > Constants.ALLOWED_TIMESTAMP_DIFF);
                 }
-                Thread.sleep(1000);
+                Thread.sleep(Constants.DAEMON_DELAY_TIME);
             }
         }
         catch (Exception exception)
