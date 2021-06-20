@@ -7,6 +7,6 @@ The API needs the following endpoints:<br /><br />
 <br /><br /><br />
 #Solution:<br />
 ● 2 REST Api controlers for handling /transactions and /statistics<br />
-● Services running the business logic to calculate total sum.<br />
+● Services running the business logic to calculate statistics.<br />
 ● Took Concurrent Hashmap to make the transaction data threadsafe. As hashmap wont block whole data structure while reading/writing<br />
 ● Daemon service is running over the transaction data to remove the expired transactions.<br />
